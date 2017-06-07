@@ -1,0 +1,17 @@
+git clone [url] //clones the repo at url in the current dir.
+git status
+git log
+git config --global user.name,  and also for user.email
+To list current settings, git config --list
+or git config --get-all [key] to get the value of that key
+git reset HEAD --hard //takes us to the last commit i.e all uncommitted changes are lost
+git add . //adds all changes of the file
+git commit -m "msg" //commits with the message msg
+//commits displayed like in a stack
+git checkout [commit-ID] //HEAD taken to commit-id
+git checkout master //takes HEAD to the last commit
+git checkout -b [branch name] //creates a new branch from the current HEAD state
+git remote //lists all remotes - origin is the default remote
+git remote add [name of the remote] [link to which we want to add the remote] 
+git pull [remote name] [branch name] //pull commits from online repo
+//MERGE CONFLICTS
