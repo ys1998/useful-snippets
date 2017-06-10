@@ -7,6 +7,8 @@ or git config --get-all [key] to get the value of that key
 git reset HEAD --hard //takes us to the last commit i.e all uncommitted changes are lost
 git add . //adds all changes of the file
 git commit -m "msg" //commits with the message msg
+git push //pushes local repo to remote repo
+git config --global push.default [simple OR matching] //sets the default pushing mode : matching - pushes to remote repo of same name; simple - pushes to repo linked with git pull
 //commits displayed like in a stack
 git checkout [commit-ID] //HEAD taken to commit-id
 git checkout master //takes HEAD to the last commit
@@ -14,4 +16,4 @@ git checkout -b [branch name] //creates a new branch from the current HEAD state
 git remote //lists all remotes - origin is the default remote
 git remote add [name of the remote] [link to which we want to add the remote] 
 git pull [remote name] [branch name] //pull commits from online repo
-//MERGE CONFLICTS
+
