@@ -1,8 +1,4 @@
-* * *
-
 # Basic Linux Commands for Beginners
-
-* * *
 
 ### <a name="user-content-general"></a>General
 
@@ -134,6 +130,29 @@ Example: `cat file | less`
 
 * * *
 
+### <a name="user-content-changing-permissions"></a>Changing Permissions
+
+`chmod a+x file` - Grants execution permission to all users of a file.  
+`chmod a+w file` - Grants write permission to all users of a file.  
+`chmod a+r file` - Grants read permission to all users of a file.
+`chmod <number> <file-name>` - Grant permission to *file-name* on the basis of the number provided
+**Important : **
+*   *Explanation for permission-number :*
+    *   Everyone falls into one of three categories - `user`, `group` or `others`.
+    *   Each category is associated with three permission-flags : `r` for *read*, `w` for *write* and `x` for *execute* ; these flags determine what the person is capable of doing with that file/directory.
+    *   The flags are in the order **rwx-rwx-rwx** for **user-group-others** respectively.
+    *   Each of `r`, `w` and `x` is given a boolean value (*0 or 1, i.e. NOT_ALLOWED or ALLOWED in layman's terms*).
+    *   The permission-number is obtained by joining the decimal representation of the flags' values for each category in the forementioned order.
+    *   **For example :** (755)~10~ -> (7-5-5)~10~ -> (111-101-101)~2~ -> rwx-r-x-r-x permission
+*   `-R` flag along with *directory-name* instead of *file-name* can be used to grant the specified permission to each item of the directory.
+
+This are just examples. `chmod` has a lot of different configurations for different kinds of permissions. For all details see its `man` page.
+
+`chown -R <username> path/of/file/or/directory` - Gives the ownership of the file or all files in the directory and its subdirectories to the mentioned user.
+
+* * *
+
+
 ### <a name="user-content-aliases"></a>Aliases
 
 An alias is a word assigned to a statement, and acts as a keyboard shortcut.
@@ -201,18 +220,6 @@ This alias lasts as long as the terminal is running. To create a permanent alias
 ##### <a name="user-content-fedora-red-hat-and-centos"></a>Fedora, Red Hat and CentOS
 
 `yum install <package-name>` - Installs a package
-
-* * *
-
-### <a name="user-content-changing-permissions"></a>Changing Permissions
-
-`chmod a+x file` - Grants execution permission to all users of a file.  
-`chmod a+w file` - Grants write permission to all users of a file.  
-`chmod a+r file` - Grants read permission to all users of a file.
-
-This are just examples. `chmod` has a lot of different configurations for different kinds of permissions. For all details see its `man` page.
-
-`chown -R <username> path/of/file/or/directory` - Gives the ownership of the file or all files in the directory and its subdirectories to the mentioned user.
 
 * * *
 
