@@ -134,16 +134,17 @@ Example: `cat file | less`
 
 `chmod a+x file` - Grants execution permission to all users of a file.  
 `chmod a+w file` - Grants write permission to all users of a file.  
-`chmod a+r file` - Grants read permission to all users of a file.
-`chmod <number> <file-name>` - Grant permission to *file-name* on the basis of the number provided
-**Important : **
+`chmod a+r file` - Grants read permission to all users of a file.<br />
+`chmod <number> <file-name>` - Grant permission to *file-name* on the basis of the number provided.
+
+#### Important :
 *   *Explanation for permission-number :*
     *   Everyone falls into one of three categories - `user`, `group` or `others`.
     *   Each category is associated with three permission-flags : `r` for *read*, `w` for *write* and `x` for *execute* ; these flags determine what the person is capable of doing with that file/directory.
     *   The flags are in the order **rwx-rwx-rwx** for **user-group-others** respectively.
     *   Each of `r`, `w` and `x` is given a boolean value (*0 or 1, i.e. NOT_ALLOWED or ALLOWED in layman's terms*).
     *   The permission-number is obtained by joining the decimal representation of the flags' values for each category in the forementioned order.
-    *   **For example :** (755)~10~ -> (7-5-5)~10~ -> (111-101-101)~2~ -> rwx-r-x-r-x permission
+    *   **For example :** **755** -> (7-5-5) -> (111-101-101) -> **rwx-r-x-r-x** -> user=**rwx**, group=**rx**, others=**rx**.
 *   `-R` flag along with *directory-name* instead of *file-name* can be used to grant the specified permission to each item of the directory.
 
 This are just examples. `chmod` has a lot of different configurations for different kinds of permissions. For all details see its `man` page.
@@ -152,6 +153,25 @@ This are just examples. `chmod` has a lot of different configurations for differ
 
 * * *
 
+### <a name="user-content-extracting-compressed-files"></a>Extracting compressed files
+
+`tar -xvzf <file.tar.gz>` - used to extract the .tar.gz file
+
+* * *
+
+### <a name="user-content-compressing-files"></a>Compressing files
+
+`tar -cvzf <tarballname.tar.gz> <item_to_compress_1> [item_to_compress_2]` - used to compress any number of files into a .tar.gz compressed archive.
+
+*   tarball.tar.gz: This is the name of the final compressed archive.
+
+`-x`: tar can collect files or extract them. x does the latter.  
+`-c`: Collects files to be compressed  
+`-v`: makes tar talk a lot. Verbose output shows you all the files being extracted.  
+`-z`: tells tar to decompress the archive using gzip  
+`-f`: this must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file.
+
+* * *
 
 ### <a name="user-content-aliases"></a>Aliases
 
@@ -264,26 +284,6 @@ This alias lasts as long as the terminal is running. To create a permanent alias
     **Note:** The `Foreign Address` can be `localhost` sometimes. It means the computer is talking to itself over the network, so to speak. This is also known as `loopback`.
 
 *   `State` - tells in which state the listed sockets are. The TCP protocol defines states, including “LISTEN” (wait for some external computer to contact us) and “ESTABLISHED” (ready for communication). The stranger among these is the “CLOSE WAIT” state shown by two sockets. This means that the foreign or remote machine has already closed the connection, but that the local program somehow hasn’t followed suit. Strange states and non-empty queues(non-zero values in `Send-Q` or `Recv-Q`) often go together.
-
-* * *
-
-### <a name="user-content-extracting-compressed-files"></a>Extracting compressed files
-
-`tar -xvzf <file.tar.gz>` - used to extract the .tar.gz file
-
-* * *
-
-### <a name="user-content-compressing-files"></a>Compressing files
-
-`tar -cvzf <tarballname.tar.gz> <item_to_compress_1> [item_to_compress_2]` - used to compress any number of files into a .tar.gz compressed archive.
-
-*   tarball.tar.gz: This is the name of the final compressed archive.
-
-`-x`: tar can collect files or extract them. x does the latter.  
-`-c`: Collects files to be compressed  
-`-v`: makes tar talk a lot. Verbose output shows you all the files being extracted.  
-`-z`: tells tar to decompress the archive using gzip  
-`-f`: this must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file.
 
 * * *
 
