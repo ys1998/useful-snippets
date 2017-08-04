@@ -2,7 +2,7 @@
 ## A collection of code-snippets, cheat-sheets and tools
 Surfing the web has often exposed me to little-yet-significant hacks and scripts, which, although, were not important to me then, seemed to be so in the near future.
 
-And that's when I decided to **collect and store** such snippets for making my (and others ;) ) programming-life a bit easier - and also for future reference.
+And that's when I decided to **collect and store** such snippets for making my (and others :wink:) programming-life a bit easier - and also for future reference.
 
 The *collection* currently houses these snippets:
 
