@@ -18,3 +18,4 @@ The *collection* currently houses these snippets:
     
 *   **Miscellaneous**
     *   *install-opencv* : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
+    *	*get-song.py* : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
