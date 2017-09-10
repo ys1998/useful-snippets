@@ -12,10 +12,10 @@ The *collection* currently houses these snippets:
     *   *[crypto_math](crypto_math.py)* : A Python-file containing common Cryptography-related algorithms
     
 *   **Linux**
-    *   *[Basic git commands for beginners](basic_git.pdf)*
-    *   *[Common sed scripts](sed_commands.pdf)*
-    *   *[Vim cheat-sheet](vim_cheat_sheet.pdf)*
-    *   *[Basic terminal commands for beginners](linux_commands.pdf)*
+    *   *[Basic git commands for beginners](basic_git_commands)*
+    *   *[Common sed scripts](sed_common_scripts.txt)*
+    *   *[Vim cheat-sheet](Vim_commands.pdf)*
+    *   *[Basic terminal commands for beginners](linux_commands.md)*
     
 *   **Miscellaneous**
     *   *[install-opencv](install-opencv.sh)* : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
