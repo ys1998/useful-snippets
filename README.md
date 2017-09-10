@@ -9,6 +9,7 @@ The *collection* currently houses these snippets:
 *   **CryptoSuite**
     *   *bi-croot* : Racket script to find the cube root of very large integers by bisection method
     *   *croot* : Same as above, but using Newton's method
+    *   *crypto_math.py* : A Python-file containing common Cryptography-related algorithms
     
 *   **Linux**
     *   *Basic git commands for beginners*
