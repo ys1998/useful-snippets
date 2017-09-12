@@ -12,10 +12,10 @@ The *collection* currently houses these snippets:
     *   *[crypto_math](crypto_math.py)* `[collected]` : A Python-file containing common Cryptography-related algorithms
     
 *   **Linux [commands & info]**
-    *   *[Basic git commands for beginners](basic_git_commands)* `[collected]` `[modified]`
+    *   *[Basic git commands for beginners](basic_git_commands)* `[created]`
     *   *[Common sed scripts](sed_common_scripts.txt)* `[collected]`
     *   *[Vim cheat-sheet](Vim_commands.pdf)* `[collected]`
-    *   *[Basic terminal commands for beginners](linux_commands.md)* `[collected]`
+    *   *[Basic terminal commands for beginners](linux_commands.md)* `[collected]` `[modified]`
     
 *   **Scripts**
     *   *[block](block.sh)* `[created]` : A bash script to block, manage and unblock websites for any browser from the terminal itself 
