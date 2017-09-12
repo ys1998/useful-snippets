@@ -81,7 +81,7 @@ else:
 			continue
 		else:
 			selected.extend(map(int,choice.split()))
-			st=end; end+=step; end=min(end,video_ids)
+			st=end; end+=step; end=min(end,len(video_ids))
 			continue
 
 	songs_list=""
