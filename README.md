@@ -18,6 +18,6 @@ The *collection* currently houses these snippets:
     *   *[Basic terminal commands for beginners](linux_commands.md)*
     
 *   **Scripts**
-    *   *[block](block.sh)* : A bash script to block, manage and unblock websites for any browser
+    *   *[block](block.sh)* : A bash script to block, manage and unblock websites for any browser from the terminal itself 
     *   *[install-opencv](install-opencv.sh)* : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
     *	*[get-song](get-song.py)* : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
