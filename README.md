@@ -11,12 +11,13 @@ The *collection* currently houses these snippets:
     *   *[croot](croot.rkt)* : Same as above, but using Newton's method
     *   *[crypto_math](crypto_math.py)* : A Python-file containing common Cryptography-related algorithms
     
-*   **Linux**
+*   **Linux [commands & info]**
     *   *[Basic git commands for beginners](basic_git_commands)*
     *   *[Common sed scripts](sed_common_scripts.txt)*
     *   *[Vim cheat-sheet](Vim_commands.pdf)*
     *   *[Basic terminal commands for beginners](linux_commands.md)*
     
-*   **Miscellaneous**
+*   **Scripts**
+    *   *[block](block.sh)* : A bash script to block, manage and unblock websites for any browser
     *   *[install-opencv](install-opencv.sh)* : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
     *	*[get-song](get-song.py)* : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
