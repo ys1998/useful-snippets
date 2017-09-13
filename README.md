@@ -6,6 +6,10 @@ And that's when I decided to **create, collect and store** such snippets for mak
 
 The *collection* currently houses these snippets:
 
+*   **Data Structures [C++]**
+    *   *[BST](bst)* `[created]` : C++ implementation of Binary Search Tree data structure with basic functionality
+    *   *[SkipList](SkipList)* `[created]` : C++ implementation of Skip List data structure with basic functionality
+
 *   **CryptoSuite**
     *   *[bi-croot](bi-croot.rkt)* `[created]` : Racket script to find the cube root of very large integers by bisection method
     *   *[croot](croot.rkt)* `[created]` : Same as above, but using Newton's method
