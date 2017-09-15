@@ -12,6 +12,17 @@ if [[ ! -e "$h" ]]; then
 	exit
 fi
 
+# Help menu
+if [[ $1 == "-h" || $1 == "--help" ]]; then
+	echo "Usage: ./block.sh [domain_name]"
+	echo -e "\tBlocks the specified domain name"
+	echo "Usage: ./block.sh [ -h,--help | -u,--unblock [domain_name] | -l,--list ]"
+	echo -e "\t-h,--help\tDisplays this help and exits"
+	echo -e "\t-u,--unblock\tUnblocks the specified domain name"
+	echo -e "\t-l,--list\tDisplays all the existing reserved/blocked domains"
+	exit	
+fi
+
 # Refining /etc/hosts
 ref=$(sudo cat $h | head -1 )
 if [[ ! $ref == "# Refined" ]]; then
@@ -31,14 +42,14 @@ if [[ ! $ref == "# Refined" ]]; then
 	echo "Refining done."
 fi
 
-if [[ $1 == "-l" ]]; then
+if [[ $1 == "-l" || $1 == "--list" ]]; then
 	echo "Domains reserved/blocked :"
 	touch hn
 	grep "^[^#].*$" $h | cut -d" " -f 2- >> hn
 	sed -i 's/\s\s*/\n/g' hn
 	cat hn | sort | uniq
 	rm hn
-elif [[ $1 == "-u" ]]; then
+elif [[ $1 == "-u" || $1 == "--unblock" ]]; then
 	if [[ $(grep "\s$2\s*$" $h) == "" ]]; then
 		echo "Domain not found."
 		echo "Try ' ./block.sh -l ' for a list of reserved/blocked domains."
