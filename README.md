@@ -7,7 +7,7 @@ And that's when I decided to **create, collect and store** such snippets for mak
 The *collection* currently houses these snippets:
 
 *   **Scripts**
-    *   *[block](Scripts/block.sh)* `[created]` : A bash script to block, manage and unblock websites for any browser from the terminal itself 
+    *   *[block](Scripts/block.txt)* `[created]` : A bash script to block, manage and unblock websites for any browser from the terminal itself 
     *   *[install-opencv](Scripts/install-opencv.sh)* `[collected]` : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
     *	*[get-song](Scripts/get-song.py)* `[created]` : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
     
