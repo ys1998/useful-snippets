@@ -7,9 +7,9 @@ And that's when I decided to **create, collect and store** such snippets for mak
 The *collection* currently houses these snippets:
 
 *   **Scripts**
-    *   *[block](Miscellaneous/block.sh)* `[created]` : A bash script to block, manage and unblock websites for any browser from the terminal itself 
-    *   *[install-opencv](Miscellaneous/install-opencv.sh)* `[collected]` : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
-    *	*[get-song](Miscellaneous/get-song.py)* `[created]` : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
+    *   *[block](Scripts/block.sh)* `[created]` : A bash script to block, manage and unblock websites for any browser from the terminal itself 
+    *   *[install-opencv](Scripts/install-opencv.sh)* `[collected]` : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
+    *	*[get-song](Scripts/get-song.py)* `[created]` : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
     
 *   **Data Structures [C++]**
     *   *[BST](DS/bst)* `[created]` : C++ implementation of Binary Search Tree data structure with basic functionality
