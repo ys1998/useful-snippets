@@ -3,8 +3,15 @@ import json
 import os, sys
 import eyed3, urllib
 
-clientID = '1739074923-AA8FA8E67DC076CEDF3EC013DBDC0258'
-userID = '48232577353955164-7F4EBAB4ED21890DE93F7F658B1375EC'
+clientID = 'your clientID (obtained from developer.gracenote.com on registering an app)'
+userID = 'your userID'
+
+# NOTE:
+# userID is obtained by executing the following command
+#
+# userID = pygn.register(clientID)
+#
+# IMPORTANT: Run this command only *once*, and store the userID for future use.
 
 for root, _, files in os.walk(sys.argv[1]):
 	artist = os.path.split(root)[1]
