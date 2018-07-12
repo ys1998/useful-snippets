@@ -10,6 +10,7 @@ The *collection* currently houses these snippets:
     *   *[block](Scripts/block.md)* `[created]` : A bash script to block, manage and unblock websites for any browser from the terminal itself 
     *   *[install-opencv](Scripts/install-opencv.sh)* `[collected]` : A bash script to download, configure and install OpenCV and other dependencies for Ubuntu
     *	*[get-song](Scripts/get-song.py)* `[created]` : A Python script to download the specified song without any hassle. It has options for manual selection as well as auto download, apart from choosing between audio and video.	
+    * *[get_song_data](Scripts/get_song_data.py)* `[created]` : A Python script to automatically fetch song metadata (along with Album Cover) from Gracenote's database and update the corresponding MP3 file
     
 *   **Data Structures [C++]**
     *   *[BST](DS/bst)* `[created]` : C++ implementation of Binary Search Tree data structure with basic functionality
